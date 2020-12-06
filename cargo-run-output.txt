@@ -1,0 +1,352 @@
+push : 00
+push : 00
+push : 00
+push : 05
+push : 01
+push : 00
+push : 00
+push : 00
+push : 03
+pop: Some(00)
+pop: Some(00)
+pop: Some(00)
+pop: Some(05)
+pop: Some(01)
+pop: Some(00)
+pop: Some(00)
+pop: Some(00)
+pop: Some(03)
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+push : 00
+push : 00
+push : 00
+push : 0a
+push : 10
+push : 00
+push : 00
+push : 00
+push : 01
+push : 00
+push : 00
+push : 00
+push : 01
+push : 2e
+pop: Some(00)
+pop: Some(00)
+pop: Some(00)
+pop: Some(0a)
+pop: Some(10)
+pop: Some(00)
+pop: Some(00)
+pop: Some(00)
+pop: Some(01)
+pop: Some(00)
+pop: Some(00)
+pop: Some(00)
+pop: Some(01)
+pop: Some(2e)
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+pop: None
+push : 00
+push : 00
+push : 00
+push : 15
+push : 0b
+push : 00
+push : 00
+push : 00
+push : 02
+push : 00
+push : 00
+push : 00
+push : 0c
+push : 2f
+push : 68
+push : 6f
+push : 6d
+push : 65
+push : 2f
+push : 75
+push : 62
+push : 75
+push : 6e
+push : 74
+push : 75
+pop: Some(00)
+pop: Some(00)
+pop: Some(00)
+pop: Some(15)
+pop: Some(0b)
+pop: Some(00)
+pop: Some(00)
+pop: Some(00)
+pop: Some(02)
+pop: Some(00)
+pop: Some(00)
+pop: Some(00)
+pop: Some(0c)
+pop: Some(2f)
+pop: Some(68)
+pop: Some(6f)
+pop: Some(6d)
+pop: Some(65)
+pop: Some(2f)
+pop: Some(75)
+pop: Some(62)
+pop: Some(75)
+pop: Some(6e)
+pop: Some(74)
+pop: Some(75)
+pop: Some(2f)
+pop: Some(75)
+pop: Some(62)
+pop: Some(75)
+pop: Some(6e)
+pop: Some(74)
+pop: Some(75)
+pop: Some(00)
+pop: Some(00)
+pop: Some(00)
+pop: Some(15)
+pop: Some(0b)
+pop: Some(00)
+push : 00
+push : 00
+push : 00
+push : 0d
+push : 0c
+push : 00
+push : 00
+push : 00
+push : 03
+push : 00
+push : 00
+push : 00
+push : 04
+push : 00
+push : 00
+push : 00
+push : 01
+deq peek: Some(00000200)
+deq: [00, 00, 02, 00, 00, 00, 0c, 2f, 68, 6f, 6d, 65, 2f, 75, 62, 75, 6e, 74, 75, 00, 00, 00, 0d, 0c, 00, 00, 00, 03, 00, 00, 00, 04, 00, 00, 00, 01]
