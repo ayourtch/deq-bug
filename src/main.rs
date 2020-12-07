@@ -13,6 +13,10 @@ fn deq_peek_u32(ideq: &mut VecDeque<u8>) -> Option<u32> {
     Some(out)
 }
 
+fn bpfunc(ideq: &mut VecDeque<u8>) {
+    // dummy function to put the breakpoint on
+}
+
 fn main() {
   let mut adeq = VecDeque::new();
 
@@ -676,6 +680,7 @@ fn main() {
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
   println!("deq len: {}", deq.len());
+  bpfunc(deq);
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
   println!("BUG ^^^");
