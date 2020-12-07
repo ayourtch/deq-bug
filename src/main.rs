@@ -15,8 +15,13 @@ fn deq_peek_u32(ideq: &mut VecDeque<u8>) -> Option<u32> {
 
 fn main() {
   let mut adeq = VecDeque::new();
-  // set to false to get rid of the bug
+
+  // set this to false to get rid of the bug...
   let do_reserve = true;
+
+  // ... or this
+  let do_make_contiguous = true;
+
   let deq = &mut adeq;
   println!("reserve 9");
   if do_reserve { deq.reserve(9); }
@@ -38,7 +43,7 @@ fn main() {
   deq.push_back(0);
   println!("push : 03");
   deq.push_back(3);
-  deq.make_contiguous();
+  if do_make_contiguous { deq.make_contiguous(); }
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
   let x = deq.pop_front();
@@ -415,7 +420,7 @@ fn main() {
   println!("pop: {:02x?}", x);
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
-  deq.make_contiguous();
+  if do_make_contiguous { deq.make_contiguous(); }
   println!("reserve 14");
   if do_reserve { deq.reserve(14); }
   println!("push : 00");
@@ -446,7 +451,7 @@ fn main() {
   deq.push_back(1);
   println!("push : 2e");
   deq.push_back(46);
-  deq.make_contiguous();
+  if do_make_contiguous { deq.make_contiguous(); }
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
   let x = deq.pop_front();
@@ -565,7 +570,7 @@ fn main() {
   println!("pop: {:02x?}", x);
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
-  deq.make_contiguous();
+  if do_make_contiguous { deq.make_contiguous(); }
   println!("reserve 25");
   if do_reserve { deq.reserve(25); }
   println!("push : 00");
@@ -619,7 +624,7 @@ fn main() {
   println!("push : 75");
   deq.push_back(117);
   println!("deq len: {}", deq.len());
-  deq.make_contiguous();
+  if do_make_contiguous { deq.make_contiguous(); }
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
   let x = deq.pop_front();
@@ -700,7 +705,7 @@ fn main() {
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
   println!("deq len: {}", deq.len());
-  deq.make_contiguous();
+  if do_make_contiguous { deq.make_contiguous(); }
   println!("deq len: {}", deq.len());
   println!("reserve 17");
   if do_reserve { deq.reserve(17); }
@@ -738,7 +743,7 @@ fn main() {
   deq.push_back(0);
   println!("push : 01");
   deq.push_back(1);
-  deq.make_contiguous();
+  if do_make_contiguous { deq.make_contiguous(); }
 
   println!("deq peek: {:08x?}", deq_peek_u32(deq));
   println!("deq len: {}", deq.len());
