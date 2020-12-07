@@ -15,9 +15,11 @@ fn deq_peek_u32(ideq: &mut VecDeque<u8>) -> Option<u32> {
 
 fn main() {
   let mut adeq = VecDeque::new();
+  // set to false to get rid of the bug
+  let do_reserve = true;
   let deq = &mut adeq;
-
-  deq.reserve(9);
+  println!("reserve 9");
+  if do_reserve { deq.reserve(9); }
   println!("push : 00");
   deq.push_back(0);
   println!("push : 00");
@@ -414,7 +416,8 @@ fn main() {
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
   deq.make_contiguous();
-  deq.reserve(14);
+  println!("reserve 14");
+  if do_reserve { deq.reserve(14); }
   println!("push : 00");
   deq.push_back(0);
   println!("push : 00");
@@ -563,7 +566,8 @@ fn main() {
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
   deq.make_contiguous();
-  deq.reserve(25);
+  println!("reserve 25");
+  if do_reserve { deq.reserve(25); }
   println!("push : 00");
   deq.push_back(0);
   println!("push : 00");
@@ -614,6 +618,7 @@ fn main() {
   deq.push_back(116);
   println!("push : 75");
   deq.push_back(117);
+  println!("deq len: {}", deq.len());
   deq.make_contiguous();
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
@@ -665,6 +670,11 @@ fn main() {
   println!("pop: {:02x?}", x);
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
+  println!("deq len: {}", deq.len());
+  let x = deq.pop_front();
+  println!("pop: {:02x?}", x);
+  println!("BUG ^^^");
+  println!("deq len: {}", deq.len());
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
   let x = deq.pop_front();
@@ -689,10 +699,11 @@ fn main() {
   println!("pop: {:02x?}", x);
   let x = deq.pop_front();
   println!("pop: {:02x?}", x);
-  let x = deq.pop_front();
-  println!("pop: {:02x?}", x);
+  println!("deq len: {}", deq.len());
   deq.make_contiguous();
-  deq.reserve(17);
+  println!("deq len: {}", deq.len());
+  println!("reserve 17");
+  if do_reserve { deq.reserve(17); }
   println!("push : 00");
   deq.push_back(0);
   println!("push : 00");
@@ -730,5 +741,6 @@ fn main() {
   deq.make_contiguous();
 
   println!("deq peek: {:08x?}", deq_peek_u32(deq));
+  println!("deq len: {}", deq.len());
   println!("deq: {:02x?}", &deq);
 }
